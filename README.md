@@ -1,6 +1,6 @@
 # 3DiFACE: Diffusion-based Speech-driven 3D Facial Animation and Editing
 
-[**Imitator**](https://balamuruganthambiraja.github.io/3DiFACE/)<br/>
+[**3DiFACE-webpage**](https://balamuruganthambiraja.github.io/3DiFACE/)<br/>
 [Balamurugan Thambiraja](https://github.com/bala1144),
 [Sadegh Aliakbarian](https://sadegh-aa.github.io/),
 [Darren Cosker](https://www.microsoft.com/en-us/research/people/coskerdarren/),
