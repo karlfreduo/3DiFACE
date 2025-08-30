@@ -94,16 +94,16 @@ def read_data(
     valid_data = []
     test_data = []
 
-    audio_path = os.path.join(os.getenv("DATA_HOME"), dataset_root, wav_path)
-    audio_feat_path = os.path.join(os.getenv("DATA_HOME"), dataset_root, 
+    audio_path = os.path.join(os.getenv("HOME"), dataset_root, wav_path)
+    audio_feat_path = os.path.join(os.getenv("HOME"), dataset_root, 
                                    wav_path.replace("wav", "audio_feat_path"))
     os.makedirs(audio_feat_path, exist_ok=True)
 
     if pretrained_wav2vec_audio_feat_path is not None:
-         pretrained_wav2vec_audio_feat_path = os.path.join(os.getenv("DATA_HOME"), dataset_root, pretrained_wav2vec_audio_feat_path)
+         pretrained_wav2vec_audio_feat_path = os.path.join(os.getenv("HOME"), dataset_root, pretrained_wav2vec_audio_feat_path)
 
-    dict_path = os.path.join(os.getenv("DATA_HOME"), dataset_root, pkl_path)
-    wav2vec_path = os.path.join(os.getenv('DATA_HOME'),
+    dict_path = os.path.join(os.getenv("HOME"), dataset_root, pkl_path)
+    wav2vec_path = os.path.join(os.getenv("HOME"),
                                 "projects/dataset/voca_face_former",
                                 "wav2vec2-base-960h")
 
@@ -114,7 +114,7 @@ def read_data(
         print("using local processor")
     processor = Wav2Vec2Processor.from_pretrained(wav2vec_path)
 
-    template_file = os.path.join(os.getenv("DATA_HOME"), dataset_root, template_file)
+    template_file = os.path.join(os.getenv("HOME"), dataset_root, template_file)
     with open(template_file, 'rb') as fin:
         templates = pickle.load(fin,encoding='latin1')
 

@@ -41,7 +41,7 @@ class render_helper():
 
                 if dataset == "blend_vocaset":
                     if len(config) == 0:
-                        config["flame_model_path"] = os.path.join(os.getenv('DATA_HOME'),
+                        config["flame_model_path"] = os.path.join(os.getenv("HOME"),
                                                       "projects/dataset/BlendVOCA")
                         config["batch_size"] = 1
                     from FLAMEModel.FLAME_Blend import FLAME

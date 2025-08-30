@@ -59,9 +59,9 @@ def read_data(
     valid_data = []
     test_data = []
 
-    audio_path = os.path.join(os.getenv("DATA_HOME"), dataset_root, wav_path)
-    vertices_path = os.path.join(os.getenv("DATA_HOME"), dataset_root, vertices_path)
-    wav2vec_path = os.path.join(os.getenv('DATA_HOME'), dataset_root, "wav2vec2-base-960h")
+    audio_path = os.path.join(os.getenv("HOME"), dataset_root, wav_path)
+    vertices_path = os.path.join(os.getenv("HOME"), dataset_root, vertices_path)
+    wav2vec_path = os.path.join(os.getenv("HOME"), dataset_root, "wav2vec2-base-960h")
     if not os.path.isdir(wav2vec_path):
         print("Using global processor to process the model")
         wav2vec_path = "facebook/wav2vec2-base-960h"
@@ -69,7 +69,7 @@ def read_data(
         print("using local processor")
     processor = Wav2Vec2Processor.from_pretrained(wav2vec_path)
 
-    template_file = os.path.join(os.getenv("DATA_HOME"), dataset_root, template_file)
+    template_file = os.path.join(os.getenv("HOME"), dataset_root, template_file)
     with open(template_file, 'rb') as fin:
         templates = pickle.load(fin,encoding='latin1')
 

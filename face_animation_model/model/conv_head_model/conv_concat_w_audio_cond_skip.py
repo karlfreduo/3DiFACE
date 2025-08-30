@@ -357,7 +357,7 @@ class in_to_motion_unet_w_audio_cond(nn.Module):
 
     # def create_audio_encoder(self, args):
     #     if hasattr(args, 'wav2vec_model'):
-    #         wav2vec_path = os.path.join(os.getenv('DATA_HOME'), args.wav2vec_model)
+    #         wav2vec_path = os.path.join(os.getenv("HOME"), args.wav2vec_model)
     #         self.audio_encoder = Wav2Vec2Model.from_pretrained(wav2vec_path)
     #     else:
     #         self.audio_encoder = Wav2Vec2Model.from_pretrained("facebook/wav2vec2-base-960h")
@@ -473,7 +473,7 @@ class unet_w_audio_cond_mask_with_audio_encoding(in_to_motion_unet_w_audio_cond)
 
     def create_audio_encoder(self, args):
         if hasattr(args, 'wav2vec_model'):
-            wav2vec_path = os.path.join(os.getenv('DATA_HOME'), args.wav2vec_model)
+            wav2vec_path = os.path.join(os.getenv("HOME"), args.wav2vec_model)
             self.audio_encoder = Wav2Vec2Model.from_pretrained(wav2vec_path)
         else:
             self.audio_encoder = Wav2Vec2Model.from_pretrained("facebook/wav2vec2-base-960h")

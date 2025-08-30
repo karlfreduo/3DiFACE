@@ -295,7 +295,7 @@ class head_render():
         if type(pred_pose) is not str:
             print("Load pred", pred_pose.shape)
 
-        metrical_tracker_dict = os.path.join(os.environ["DATA_HOME"], "projects/dataset/HDTF", "metrical_tracker_dict")
+        metrical_tracker_dict = os.path.join(os.environ["HOME"], "projects/dataset/HDTF", "metrical_tracker_dict")
         gt_file = os.path.join(metrical_tracker_dict, seq_name_without_ss+".pkl")
         with open(gt_file, 'rb') as fin:
             sub_dict = pickle.load(fin,encoding='latin1')
@@ -308,7 +308,7 @@ class head_render():
                 pred_pose = g_fn(pred_pose)
 
         print("Load gt", gt_motion.shape)
-        audio_path = os.path.join(os.getenv("DATA_HOME"), "projects/dataset/HDTF", "wav")
+        audio_path = os.path.join(os.getenv("HOME"), "projects/dataset/HDTF", "wav")
         audio_file = os.path.join(audio_path, seq_name_without_ss+".wav")        
 
         out_dir = os.path.dirname(pred_file)+"_video"
@@ -354,7 +354,7 @@ if __name__ == "__main__":
 
         # args.model_path = "/is/rg/ncs/projects/bthambiraja/SadTalker_hdtf/processed_to_voca_format"
         # args.model_path = "/is/rg/ncs/projects/bthambiraja/TalkShow/hdtf_subj_wise"
-        os.environ["DATA_HOME"] = os.path.join(os.environ["DATA_HOME"], "work")
+        os.environ["HOME"] = os.path.join(os.environ["HOME"], "work")
         # args.model_path = "/home/bthambiraja/work/projects/dataset/HDTF/metrical_tracker_dict"
         # args.seq = "RD_Radio1_000.pkl"
         

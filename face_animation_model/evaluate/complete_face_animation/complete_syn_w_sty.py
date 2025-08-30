@@ -115,12 +115,12 @@ class test_w_sty_head():
             if os.getenv("VOCASET_PATH"):
                 template_file = os.path.join(os.getenv("VOCASET_PATH"), "templates.pkl")
             else:
-                template_file = os.path.join(os.getenv("DATA_HOME"), "projects/dataset/voca_face_former", "templates.pkl")
+                template_file = os.path.join(os.getenv("HOME"), "projects/dataset/voca_face_former", "templates.pkl")
                 with open(template_file, 'rb') as handle:
                     self.templates = pickle.load(handle, encoding='latin1')
 
         elif method == "HDTF":
-            template_file = os.path.join(os.getenv("DATA_HOME"), "projects/dataset/HDTF", "templates.pkl")
+            template_file = os.path.join(os.getenv("HOME"), "projects/dataset/HDTF", "templates.pkl")
             with open(template_file, 'rb') as handle:
                 self.templates = pickle.load(handle, encoding='latin1')
 
@@ -793,7 +793,7 @@ if __name__ == "__main__":
     # create the tester
     tester = test_w_sty_head()
     if args.audio_file is None:
-        os.environ["DATA_HOME"] = "/home/bthambiraja"
+        os.environ["HOME"] = "/home/bthambiraja"
         args.audio_file = "./assests/audio/01welcome.wav"
         # args.audio_file = "./assests/audio/k-pmfynqbko.wav"
         # args.audio_file = "./assests/audio/wD-jLNmRVfw.wav"

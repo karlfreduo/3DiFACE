@@ -46,13 +46,13 @@ def extract_audio_features():
 
     device = "cuda"
     # # data set config
-    # os.environ["DATA_HOME"] = os.path.join("/home/bthambiraja", "work")
-    os.environ["DATA_HOME"] = os.path.join("/work/bthambiraja")
+    # os.environ["HOME"] = os.path.join("/home/bthambiraja", "work")
+    os.environ["HOME"] = os.path.join("/work/bthambiraja")
     data_cfg = "dev/data/process_hdtf/data_cfg.yml"
     cfg = OmegaConf.load(data_cfg)
     data =  init_from_config(cfg.data_cfg)
 
-    out_path = os.path.join(os.path.join(os.environ["DATA_HOME"], cfg.data_cfg.params.dataset_root, "wav2vec_audio_feat_3diface"))
+    out_path = os.path.join(os.path.join(os.environ["HOME"], cfg.data_cfg.params.dataset_root, "wav2vec_audio_feat_3diface"))
     os.makedirs(out_path, exist_ok=True)
 
     # load the model and use the prepare model function

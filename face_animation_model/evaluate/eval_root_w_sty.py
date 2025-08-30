@@ -105,7 +105,7 @@ class test_w_sty_blendvoca(test):
 
         config = {}
         if len(config) == 0:
-            config["flame_model_path"] = os.path.join(os.getenv('DATA_HOME'),
+            config["flame_model_path"] = os.path.join(os.getenv("HOME"),
                                                       "projects/dataset/BlendVOCA")
             config["batch_size"] = 1
         ## this is not not needed for the BIWi model
@@ -214,7 +214,7 @@ class test_w_sty_blendvoca(test):
                 # if True:
                     subj = file_name[0].split("_sent")[0]
                     sent = file_name[0].split("_TA_")[-1]
-                    audio_file = os.path.join(os.getenv('DATA_HOME'), args.data_cfg.params.dataset_root, "wav", subj, sent)
+                    audio_file = os.path.join(os.getenv("HOME"), args.data_cfg.params.dataset_root, "wav", subj, sent)
                     curr_out_file = os.path.join(npy_dir, seq_name_with_condition+".npy")
                     out_dict = {
                             "gt": gt_kp,
@@ -264,7 +264,7 @@ class test_w_sty_blendvoca(test):
                     out_file_w_aud = out_file.replace(".mp4", "_waud.mp4")
                     subj = file_name[0].split("_sent")[0]
                     sent = file_name[0].split("_TA_")[-1]
-                    audio_file = os.path.join(os.getenv('DATA_HOME'), args.data_cfg.params.dataset_root, "wav", subj, sent)
+                    audio_file = os.path.join(os.getenv("HOME"), args.data_cfg.params.dataset_root, "wav", subj, sent)
                     self.render_helper_obj.add_audio_to_video(audio_file, out_file, out_file_w_aud)
                     
                     os.system(f"rm {gt_file} {pred_file} {diff_file}")

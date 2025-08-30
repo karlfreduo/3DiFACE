@@ -11,7 +11,7 @@ class Disp_Noise():
                  std_scale=1):
 
         if dataset_path is None:
-            dataset_path = os.path.join(os.getenv("DATA_HOME"), "projects/dataset/voca_face_former")
+            dataset_path = os.path.join(os.getenv("HOME"), "projects/dataset/voca_face_former")
 
         disp_mean = torch.from_numpy(np.load(os.path.join(dataset_path, "disp_mean.npy"), allow_pickle=True)).float().to(device)
         disp_std = torch.from_numpy(np.load(os.path.join(dataset_path, "disp_std.npy"), allow_pickle=True)).float().to(device)
@@ -189,9 +189,9 @@ class constant_random_Noise_v2():
         self.const_noise = None
 
         # noise for the constant experiment
-        noise = np.load(os.path.join(os.getenv("DATA_HOME"), noise_file))
+        noise = np.load(os.path.join(os.getenv("HOME"), noise_file))
         self.const_noise = torch.from_numpy(noise).float() * std_scale
-        print("noise loaded from", os.path.join(os.getenv("DATA_HOME"), noise_file))
+        print("noise loaded from", os.path.join(os.getenv("HOME"), noise_file))
         print("scale", self.std_scale)
         print("First 10 values", self.const_noise[0, 0, :10].cpu().numpy())
         print("Const noise mean", torch.mean(self.const_noise).numpy())
