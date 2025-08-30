@@ -107,7 +107,7 @@ class test_w_sty_head():
 
         self.templates = None
         from face_animation_model.visualizer.render_head_video_from_dump import render_helper
-        self.render_helper_obj = render_helper(render_type="shitty")
+        self.render_helper_obj = render_helper(render_type="normal_camera")
 
     def load_templates(self, method):
 

@@ -19,6 +19,8 @@ pretrained_models/
 pretrained_models.zip
 pretrained_model/*
 pretrained_models/copy_pretrained_model.sh
+dataset_assets
+dataset_assets/*
 
 # Distribution / packaging
 .Python

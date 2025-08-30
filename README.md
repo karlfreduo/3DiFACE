@@ -39,11 +39,19 @@ The project uses a dedicated Conda environment to manage dependencies.
     ```
 
 3.  **Activate the Environment:**
-    After creation, activate the environment:
     ```bash
     conda activate mdm38
     ```
+4.  **Dataset preparation for running demo**:
+    * Download wav2vec model, for example wav2vec2-base-960h from HuggingFace.
+    * Please VOCASET using the steps in [Imitator](https://github.com/bala1144/Imitator) and [Faceformer](https://github.com/EvelynFan/FaceFormer)
 
+5.  **Export the repo paths**:
+    ```bash
+    export PYTHONPATH=$PYTHONPATH:<path>/3DiFACE:<path>/3DiFACE/face_animation_model
+    export VOCASET_PATH=<Path to vocaset folder>
+    export WAV2VEC_PATH=<Path to wav2vec model folder (e.g. wav2vec2-base-960h)>
+    ```
 
 ## Usage
 
