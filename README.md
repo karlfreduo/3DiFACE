@@ -22,7 +22,7 @@ git clone https://github.com/your_username/3DiFace.git # Replace with actual rep
 cd 3DiFace
 ```
 
-### Create and Activate Conda Environment
+### Setup up the environment and pre-trained models
 The project uses a dedicated Conda environment to manage dependencies.
 
 1.  **Create the Conda Environment:**
