@@ -56,7 +56,7 @@ python face_animation_model/evaluate/complete_face_animation/complete_syn_w_sty.
 ```
 
 *   `--device cuda`: Specifies that the evaluation should run on a CUDA-enabled GPU. If you do not have a CUDA-enabled GPU, you might need to change this to `--device cpu` (though performance will be significantly slower).
-*   **Configuration:** The evaluation behavior is controlled by the configuration file located at `face_animation_model/evaluate/complete_face_animation/cfg/comp_syn.yaml`. You can modify this file to adjust various parameters. Here are some key configurable options:
+*   **Configuration:** The evaluation can configured using `face_animation_model/evaluate/complete_face_animation/cfg/comp_syn.yaml`. Here are some key configurable options:
     *   **`head_motion_model`**:
         *   `model_path`: Path to the pre-trained head motion model (e.g., `pretrained_models/head_reg_16_ip_mp0_02_rd02_3D_stdnorm_waud_skip_vel_loss0010`).
         *   `model_ckpt`: Specific checkpoint file within the model path (e.g., `"model000100035"`).
