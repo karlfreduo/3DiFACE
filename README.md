@@ -52,7 +52,7 @@ The project uses a dedicated Conda environment to manage dependencies.
 To run the face animation evaluation using a pre-trained model, execute the following command:
 
 ```bash
-python face_animation_model/evaluate/complete_face_animation/complete_syn_w_sty.py --device cuda
+python face_animation_model/evaluate/complete_face_animation/complete_syn_w_sty.py --audio_file assests/audio/01welcome.wav --device cuda
 ```
 
 *   `--device cuda`: Specifies that the evaluation should run on a CUDA-enabled GPU. If you do not have a CUDA-enabled GPU, you might need to change this to `--device cpu` (though performance will be significantly slower).

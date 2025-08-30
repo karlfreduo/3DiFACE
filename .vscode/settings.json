@@ -1,0 +1,7 @@
+{
+    "launches": 
+    {
+        "RunTrain_from_cfg": "train_from_cfg",
+        "RunTrain_current_file": "Python: Current File"
+    }
+}
