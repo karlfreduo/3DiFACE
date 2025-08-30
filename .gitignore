@@ -21,6 +21,8 @@ pretrained_model/*
 pretrained_models/copy_pretrained_model.sh
 dataset_assets
 dataset_assets/*
+.vscode
+.vscode/*
 
 # Distribution / packaging
 .Python
