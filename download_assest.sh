@@ -21,7 +21,8 @@ unzip FLAME.zip -d $flame_path
 rm FLAME.zip
 
 echo "Downloading 3DiFACE pretrained model..."
-wget "https://keeper.mpdl.mpg.de/f/508fcbc9fee14f6aac1b/?dl=1" -O pretrained_model.zip
+wget "https://keeper.mpdl.mpg.de/f/508fcbc9fee14f6aac1b/?dl=1" -O pretrained_models.zip
 echo "Extracting pretrained_model..."
 unzip pretrained_models.zip
-rm pretrained_models.zip
+rm pretrained_models.zip 
+rm -rf __MACOSX

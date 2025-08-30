@@ -1,5 +1,4 @@
 #!/bin/bash
-
 echo "Creating mdm env"
 conda env create -n mdm38 --file env38.yml
 conda activate mdm38
