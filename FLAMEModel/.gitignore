@@ -6,19 +6,7 @@ __pycache__/
 # C extensions
 *.so
 data/*
-logs
-flame_2020
-motion_root.code-workspace
-.DS_Store
-._.DS_Store
-local_temp/
-README_org.md
-FLAMEModel/model
-FLAMEModel/flame_model.zip
-pretrained_models/
-pretrained_models.zip
-pretrained_model/*
-pretrained_models/copy_pretrained_model.sh
+model
 
 # Distribution / packaging
 .Python
