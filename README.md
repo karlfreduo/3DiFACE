@@ -7,7 +7,7 @@
 [Darren Cosker](https://www.microsoft.com/en-us/research/people/coskerdarren/),
 [Justus Thies](https://justusthies.github.io/)<br/>
 
-![teaser](./assets/teaser.png)
+![teaser](./assests/teaser/teaser.jpg)
 [arXiv](http://arxiv.org/abs/2312.00870) | [BibTeX](#bibtex) | [Project Page](https://balamuruganthambiraja.github.io/3DiFACE/)
 
 ## Environment Setup
