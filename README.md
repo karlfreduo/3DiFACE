@@ -121,7 +121,7 @@ To use a specific pre-trained model, ensure its path is correctly referenced in 
 *   `cond_012_17_00_concat_prob10_vel10/`: Generalized face-motion model [predicts voca face vertices]
 *   `sa_03_024_fo_ns18/`: Personalized face-motion model for VOCA test identity '024'
 *   `sa_03_138_fo_ns18/`: Personalized face-motion model for VOCA test identity '138'
-*   `head_reg_14_kf_mp0_02_rd02_3D_stdnorm_waud_skip/`: Head motion model trained for motion key-framing.
+*   `head_reg_14_kf_mp0_02_rd02_3D_stdnorm_waud_skip_vel_loss0010/`: Head motion model trained for motion key-framing.
 *   `head_reg_16_ip_mp0_02_rd02_3D_stdnorm_waud_skip_vel_loss0010/`: Head motion model trained for in-painting.
 
 ## Contributing
