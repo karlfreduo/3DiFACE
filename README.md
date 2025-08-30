@@ -101,7 +101,7 @@ A high-level overview of the important directories and their contents:
     *   `train/`: Training scripts and related configurations.
     *   `utils/`: General utility functions.
     *   `visualizer/`: Tools for visualizing animation results.
-*   `FLAMEModel/`: Files related to the FLAME (Face Learned Anatomical Model) model, used for 3D face representation.
+*   `FLAMEModel/`: Files related to the FLAME model, used for 3D face representation.
 *   `pretrained_models/`: Stores pre-trained model checkpoints used for evaluation and inference.
 *   `assests/`: Contains example audio files that can be used for testing or demonstration.
 *   `create_env.sh`: A shell script to automate the Conda environment setup.
