@@ -50,7 +50,6 @@ The project uses a dedicated Conda environment to manage dependencies.
     ```bash
     export PYTHONPATH=$PYTHONPATH:<path>/3DiFACE:<path>/3DiFACE/face_animation_model
     export VOCASET_PATH=<Path to vocaset folder>
-    export DATA_HOM=<Path to voacaset folder>
     export WAV2VEC_PATH=<Path to wav2vec model folder (e.g. wav2vec2-base-960h)>
     ```
 
