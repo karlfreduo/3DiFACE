@@ -23,6 +23,7 @@ dataset_assets
 dataset_assets/*
 .vscode
 .vscode/*
+rsync_to_cluster.sh
 
 # Distribution / packaging
 .Python

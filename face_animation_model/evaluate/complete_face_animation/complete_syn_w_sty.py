@@ -519,8 +519,8 @@ class test_w_sty_head():
         one_hot[0, 2] = 1
 
         # audio_file = pred_file.split("/")[-1].replace(".npy", ".wav")
-        if os.path.exists(pred_file):
-            audio_file = pred_file
+        if os.path.exists(args.audio_file):
+            audio_file = args.audio_file
         elif "RD_Rad" in  seq_name_without_ss:
             audio_file = os.path.join("/home/bthambiraja/work/projects", "dataset/HDTF/test_wav_20sec", seq_name_without_ss+".wav")
         else:
