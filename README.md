@@ -1,4 +1,4 @@
-# 3DiFACE: Diffusion-based Speech-driven 3D Facial Animation and Editing
+# 3DiFACE: Synthesizing and Editing Holistic 3D Facial Animation
 
 [**3DiFACE-webpage**](https://balamuruganthambiraja.github.io/3DiFACE/)<br/>
 [Balamurugan Thambiraja](https://balamuruganthambiraja.github.io/),
