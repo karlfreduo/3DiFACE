@@ -44,7 +44,7 @@ The project uses a dedicated Conda environment to manage dependencies.
     ```
 4.  **Dataset preparation for running demo**:
     * Download wav2vec model, for example wav2vec2-base-960h from HuggingFace.
-    * Please VOCASET using the steps in [Imitator](https://github.com/bala1144/Imitator) and [Faceformer](https://github.com/EvelynFan/FaceFormer)
+    * Process VOCASET using the steps in [Imitator](https://github.com/bala1144/Imitator) and [Faceformer](https://github.com/EvelynFan/FaceFormer)
 
 5.  **Export the repo paths**:
     ```bash
@@ -118,7 +118,7 @@ A high-level overview of the important directories and their contents:
 
 ## Pre-trained Models
 
-Pre-trained models are essential for quickly running evaluations and demonstrations without needing to train the model from scratch. The `pretrained_models/` directory contains various checkpoints. Each subdirectory typically includes:
+The `pretrained_models/` directory contains various checkpoints. Each subdirectory typically includes:
 
 *   `args.yml`: Configuration arguments used during the model's training.
 *   `checkpoints/`: The actual model checkpoint files (e.g., `.pt` files).
