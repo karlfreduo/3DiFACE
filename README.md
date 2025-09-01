@@ -18,8 +18,8 @@ To get started with the 3D Face Animation Model, follow these steps to set up yo
 First, clone the project repository to your local machine:
 
 ```bash
-git clone https://github.com/your_username/3DiFace.git # Replace with actual repository URL if available
-cd 3DiFace
+https://github.com/bala1144/3DiFACE.git
+cd 3DiFACE
 ```
 
 ### Setup up the environment and pre-trained models
