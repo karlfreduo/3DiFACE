@@ -110,10 +110,11 @@ class test_w_sty_head():
         self.render_helper_obj = render_helper(render_type="normal_camera")
 
     def load_templates(self, method):
-
         if method == "voca":
             if os.getenv("VOCASET_PATH"):
                 template_file = os.path.join(os.getenv("VOCASET_PATH"), "templates.pkl")
+                with open(template_file, 'rb') as handle:
+                    self.templates = pickle.load(handle, encoding='latin1')
             else:
                 template_file = os.path.join(os.getenv("HOME"), "projects/dataset/voca_face_former", "templates.pkl")
                 with open(template_file, 'rb') as handle:
