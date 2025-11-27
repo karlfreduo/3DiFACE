@@ -4,7 +4,7 @@ Helpers for distributed training.
 
 import io, os, socket
 import blobfile as bf
-# from mpi4py import MPI
+from mpi4py import MPI
 
 import socket
 import torch as th

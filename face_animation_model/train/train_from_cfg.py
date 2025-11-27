@@ -4,9 +4,12 @@ Train a diffusion model on images.
 """
 
 import os
-from motion_diffusion_model.utils.fixseed import fixseed
-from motion_diffusion_model.utils.parser_util import train_args
-from motion_diffusion_model.utils import dist_util
+#from motion_diffusion_model.utils.fixseed import fixseed
+#from motion_diffusion_model.utils.parser_util import train_args
+#from motion_diffusion_model.utils import dist_util
+from face_animation_model.utils.fixseed import fixseed
+from face_animation_model.utils.parser_util import train_args
+from face_animation_model.utils import dist_util
 from face_animation_model.train.train_platforms import ClearmlPlatform, TensorboardPlatform, NoPlatform  # required for the eval operation
 from omegaconf import OmegaConf
 from face_animation_model.utils.init_helper import init_from_config
